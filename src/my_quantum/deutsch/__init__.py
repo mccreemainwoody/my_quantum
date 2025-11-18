@@ -1,6 +1,4 @@
-"""Simple library containing various basic quamtum algorithms."""
-
-from .deutsch import (
+from .circuit import (
     deutsch_algorithm,
     deutsch_circuit,
 )

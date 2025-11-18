@@ -1,11 +1,22 @@
 [project]
 name = "my-quantum"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple quantum computing practice library"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "qiskit>=2.2.3",
+]
 package = true
+
+[dependency-groups]
+dev = [
+    "icecream>=2.1.8",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.7",
+    "pylatexenc>=2.10",
+    "qiskit-aer>=0.17.2",
+]
 
 [build-system]
 requires = ["uv_build>=0.9.10,<0.10.0"]
